@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+	<meta charset="utf-8">  <!--"utf-8" Carácteres peseciales-->
+	<meta name ="viewport" content="width=device-width, initial-scale= 1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-ede">
+	<title>Document</title> <!-- Para comentar -->
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+	<h1>Hola, soy el ejericio H2</h1>
+
+	<h2>Ejemplo H2</h2>
+	
+	<div class="banner">
+		<p>Hola mi nombre es Ana y voy a poner un texto largo para probar mi código. <br/> <br/>
+			Probando las propiedades de posicionamiento. <br/> <br/>
+	  		CSS positioning is often misunderstood. Sometimes, in a bug-fixing fury, we apply different position values to a given selector until we get one that works. This is a tedious process that can work for a time, but it behooves us to know why specifying something like position: relative can fix your layout bug. My hope is that we can learn the position property’s values and behaviors, and most importantly, how a value can affect your markup. <br/> <br/>
+
+			The CSS specification offers us five position properties: static, relative, absolute, fixed, and inherit. Each property serves a specific purpose. Understanding that purpose is the key to mastering CSS-based layouts. <br/><br/>
+
+			GET WITH THE FLOW<br/><br/>
+			First, let’s take a step back to recognize the world we’re working in. Much like our real world, in CSS, we work within boundaries. In CSS, this boundary is called the normal flow. According to the CSS 2.1 spec: <br/><br/>
+
+			Boxes in the normal flow belong to a formatting context, which may be block or inline, but not both simultaneously. Block boxes participate in a block formatting context. Inline boxes participate in an inline formatting context. <br/><br/>
+			Think of a “box,” as described by the spec as a wooden block—not unlike the ones you played with as a young whippersnapper. Now, think of the normal flow as a law similar to the law of gravity. The normal flow of the document is how your elements stack one on top of each other, from the top down, in the order in which they appear in your markup. You may remember stacking alphabet blocks into giant towers: The normal flow is no different than those wooden blocks bound by the law of gravity. As a child, you had one block on top of another; in your markup, you have one element after another. What you couldn’t do as a child, however, was give those blocks properties that could defy the law of gravity. All of the sudden, CSS seems a lot cooler than those alphabet blocks. <br/><br/>
+
+			Static and relative—nothing new here<br/><br/>
+			The static and relative position properties behave like your childhood blocks—they stack as you would expect. Note that static is the default position value of an element, should you fail to apply any other value. If you have three statically positioned elements in your code, they will stack one on top of the next, as you might expect. Let’s take a look at an example with three elements, all with a position value of static:<br/><br/>
+
+
+			In example A, you can see three elements stacked like a simple tower. Fascinating, isn’t it? This is block building 101. Congratulations! <br/><br/>
+
+			You can use the static value for simple, single-column layouts where each element must sit on top of the next one. If you want to start shifting those elements around using offset properties such as top, right, bottom, and left, you’re out of luck. These properties are unavailable to a static element. In fact, a static element can’t even create a new coordinate system for child elements. Wait. What? You lost me at coordinate system. Roger that, Roger. Let’s explain using the relative value.<br/><br/>
+
+			Relatively positioned elements behave just like statically positioned elements; they play well with others, stack nicely, and don’t cause a ruckus. Hard to believe, right? Take a look at our previous example. This time, we’ve applied the relative value:<br/><br/>
+
+			Example B proves that relatively positioned elements behave exactly the same way as statically positioned elements. What you may not know is that elements with a relative position value are like Clark Kent—they hide far greater powers than their static siblings.<br/><br/>
+
+
+			For starters, we can adjust a relatively positioned element with offset properties: top, right, bottom, and left. Using the markup from our previous example, let’s add an offset position to #box_2:<br/><br/>
+		</p>
+	</div>	
+
+
+	<div class="bluei">Esto queda fijo</div>
+</body>
+</html>
